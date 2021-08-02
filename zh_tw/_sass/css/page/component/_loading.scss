@@ -1,0 +1,17 @@
+.loading{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: $z_loading;
+
+  .logo{
+    width: 90px;
+
+    @media (min-width: $media_md) {
+      width: 140px;
+    }
+  }
+}

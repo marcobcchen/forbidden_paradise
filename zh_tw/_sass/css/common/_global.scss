@@ -1,0 +1,73 @@
+﻿body{
+  font-family: 'Noto Sans TC', Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  background-color: #fff;
+}
+
+.font-family-serif{
+  font-family: 'Noto Serif TC', sans-serif;
+}
+
+img{
+  width: 100%;
+}
+
+.container-fluid{
+  max-width: 1440px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.wrap{
+  padding: 0 30px;
+
+  @media (min-width: $media_lg) {
+    // padding: 0;
+  }
+}
+
+
+// bootstrap customized modal
+.modal-backdrop{
+    opacity: 0.85 !important;
+}
+
+.modal{
+  .modal-content{
+    background-color: #000;
+    border-radius: 0;
+
+    .close{
+      position: absolute;
+      right: 0;
+      top: -30px;
+      width: 20px;
+
+      @media (min-width: $media_md) {
+        top: -40px;
+        width: 30px;
+      }
+    }
+  }
+
+  .modal-body{
+   
+    .youtube-container{
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+
+      iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

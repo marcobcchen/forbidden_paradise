@@ -1,0 +1,75 @@
+﻿main{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+
+  .banner-container{
+    padding-top: 60px;
+
+    @media (min-width: $media_xl) {
+      padding-top: 90px;
+    }
+
+    .item{
+      padding: 0;
+
+      @media (min-width: $media_lg) {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+// slick customized arrow
+.slick-slide {
+  outline: none;
+}
+
+.arrow-left{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 20px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover{
+    left: 5px;
+
+    @media (min-width: $media_lg) {
+      left: 95px;
+    }
+  }
+
+  @media (min-width: $media_lg) {
+    left: 100px;
+  }
+}
+
+.arrow-right{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 20px;
+  transform: translateY(-50%);
+  transition: right 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover{
+    right: 5px;
+
+    @media (min-width: $media_lg) {
+      right: 95px;
+    }
+  }
+
+  @media (min-width: $media_lg) {
+    right: 100px;
+  }
+}

@@ -1,0 +1,147 @@
+﻿main{
+  background-color: #161616;
+}
+
+.contact{
+  padding-top: 60px;
+
+  @media (min-width: $media_xl) {
+    padding-top: 100px;
+    min-height: calc(100vh - 50px);
+  }
+
+  .title{
+    margin-top: 60px;
+  }
+
+  .cover{
+    width: 100%;
+    height: 370px;
+    
+    @media (min-width: $media_lg) {
+      width: 50%;
+      height: 630px;
+      margin: 60px 0;
+      padding: 0 30px;
+    }
+
+    > div{
+      background-color: #000;
+    }
+
+    img{
+      max-width: 120px;
+
+      @media (min-width: $media_lg) {
+        max-width: 140px;
+      }
+    }
+  }
+
+  .form-container{
+    width: 100%;
+    margin: 60px 0;
+
+    @media (min-width: $media_lg) {
+      width: 50%;
+    }
+
+    label{
+      font-size: 1rem;
+    }
+
+    input{
+      color: #fff;
+      border-color: #000;
+      background-color: #000;
+      box-shadow: none;
+    }
+
+    textarea{
+      padding: .375rem .75rem;
+      color: #fff;
+      border-color: #000;
+      background-color: #000;
+      box-shadow: none;
+      border-radius: .25rem;
+      outline: none;
+    }
+
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent !important;
+      border-color: transparent !important;
+      padding-left: 0;
+      padding-right: 0;
+      transition: .4s;
+
+      i{
+        display: block;
+        background: url(../images/global/icon_submit.png) no-repeat center center;
+        background-size: contain;
+        width: 10px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      &:hover{
+        opacity: 0.5;
+      }
+
+      &:focus, &:active{
+        background-color: transparent !important;
+        border-color: transparent !important;
+        outline: none !important;
+        box-shadow: none;
+      } 
+    }
+  }
+
+  .content{
+    margin-bottom: 60px;
+
+    .title{
+      margin-bottom: 30px;
+
+      @media (min-width: $media_lg) {
+        margin-bottom: 0;
+        margin-right: 120px;
+      }
+    }
+
+    .description{
+      article{
+        p:last-child{
+          margin: 0;
+        }
+      }
+    }
+
+    .link-group{
+      margin-top: 30px;
+
+      a{
+        color: #fff;
+        transition: .4s;
+
+        &:hover{
+          text-decoration: none;
+          opacity: 0.5;
+        }
+
+        &:focus, &:active{
+          color: #fff;
+        }
+      }
+
+      .line{
+        width: 1px;
+        height: 24px;
+        margin: 0 1rem;
+        background-color: #fff;
+      }
+    }
+  }
+}

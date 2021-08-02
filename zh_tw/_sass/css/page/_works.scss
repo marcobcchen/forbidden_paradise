@@ -1,0 +1,18 @@
+﻿main{
+  background-color: #161616;
+}
+
+.works{
+  padding-top: 60px;
+
+  @media (min-width: $media_xl) {
+    padding-top: 100px;
+    min-height: calc(100vh - 50px);
+  }
+
+  figure{
+    a{
+      outline: none;
+    }
+  }
+}
