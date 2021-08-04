@@ -31,11 +31,16 @@
         &::before{
           opacity: 1;
         }
+
+        & + h4{
+          opacity: 0.5;
+        }
       }
     }
     
     h4{
       word-wrap: break-word;
+      transition: .4s;
     }
   }
 }

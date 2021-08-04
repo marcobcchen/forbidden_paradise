@@ -27,13 +27,13 @@
   // 設置slick
   function setSlick(el){
     el.slick({
-      dots: true,
       infinite: true,
       dots: false,
       speed: 600,
       slidesToShow: 1,
       slidesToScroll: 1,
       centerMode: true,
+      autoplay: true,
       centerPadding: '200px',
       prevArrow: '<div class="arrow-left"><img class="img-fluid" src="images/global/arrow_left.png"></div>',
       nextArrow: '<div class="arrow-right"><img class="img-fluid" src="images/global/arrow_right.png"></div>',

@@ -124,4 +124,12 @@ main { background-color: #161616; }
 @media (min-width: 1200px) { /* line 5, ../_sass/css/page/_works.scss */
   .works { padding-top: 100px; min-height: calc(100vh - 50px); } }
 /* line 14, ../_sass/css/page/_works.scss */
-.works figure a { outline: none; }
+.works figure a { outline: none; position: relative; }
+/* line 18, ../_sass/css/page/_works.scss */
+.works figure a::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition: .4s; }
+/* line 31, ../_sass/css/page/_works.scss */
+.works figure a:hover::before { opacity: 1; }
+/* line 35, ../_sass/css/page/_works.scss */
+.works figure a:hover ~ h4, .works figure a:hover ~ figcaption { opacity: 0.5; }
+/* line 41, ../_sass/css/page/_works.scss */
+.works figure h4, .works figure figcaption { transition: .4s; }
