@@ -142,34 +142,34 @@ main { background-color: #161616; }
 /* line 51, ../_sass/css/page/_join_us.scss */
 .join-us .form-container .description { font-size: 1rem; line-height: 2; margin-bottom: 60px; }
 /* line 57, ../_sass/css/page/_join_us.scss */
-.join-us .form-container label { font-size: 1rem; padding-right: 1.5rem; }
-/* line 62, ../_sass/css/page/_join_us.scss */
+.join-us .form-container label { font-size: 1rem; white-space: nowrap; padding-right: 1.5rem; }
+/* line 63, ../_sass/css/page/_join_us.scss */
 .join-us .form-container input { color: #fff; border-color: #000; background-color: #000; box-shadow: none; }
-/* line 69, ../_sass/css/page/_join_us.scss */
+/* line 70, ../_sass/css/page/_join_us.scss */
 .join-us .form-container textarea { padding: .375rem .75rem; color: #fff; border-color: #000; background-color: #000; box-shadow: none; border-radius: .25rem; outline: none; }
-/* line 79, ../_sass/css/page/_join_us.scss */
+/* line 80, ../_sass/css/page/_join_us.scss */
 .join-us .form-container button { display: flex; justify-content: center; align-items: center; background-color: transparent !important; border-color: transparent !important; padding-left: 0; padding-right: 0; transition: .4s; }
-/* line 89, ../_sass/css/page/_join_us.scss */
+/* line 90, ../_sass/css/page/_join_us.scss */
 .join-us .form-container button i { display: block; background: url(../images/global/icon_submit.png) no-repeat center center; background-size: contain; width: 10px; height: 20px; margin-right: 10px; }
-/* line 98, ../_sass/css/page/_join_us.scss */
+/* line 99, ../_sass/css/page/_join_us.scss */
 .join-us .form-container button:hover { opacity: 0.5; }
-/* line 102, ../_sass/css/page/_join_us.scss */
+/* line 103, ../_sass/css/page/_join_us.scss */
 .join-us .form-container button:focus, .join-us .form-container button:active { background-color: transparent !important; border-color: transparent !important; outline: none !important; box-shadow: none; }
-/* line 111, ../_sass/css/page/_join_us.scss */
+/* line 112, ../_sass/css/page/_join_us.scss */
 .join-us .content { margin-bottom: 60px; }
-/* line 114, ../_sass/css/page/_join_us.scss */
+/* line 115, ../_sass/css/page/_join_us.scss */
 .join-us .content .title { margin-bottom: 30px; }
-@media (min-width: 992px) { /* line 114, ../_sass/css/page/_join_us.scss */
+@media (min-width: 992px) { /* line 115, ../_sass/css/page/_join_us.scss */
   .join-us .content .title { margin-bottom: 0; margin-right: 120px; } }
-/* line 125, ../_sass/css/page/_join_us.scss */
+/* line 126, ../_sass/css/page/_join_us.scss */
 .join-us .content .description article p:last-child { margin: 0; }
-/* line 131, ../_sass/css/page/_join_us.scss */
+/* line 132, ../_sass/css/page/_join_us.scss */
 .join-us .content .link-group { margin-top: 30px; }
-/* line 134, ../_sass/css/page/_join_us.scss */
+/* line 135, ../_sass/css/page/_join_us.scss */
 .join-us .content .link-group a { color: #fff; transition: .4s; }
-/* line 138, ../_sass/css/page/_join_us.scss */
+/* line 139, ../_sass/css/page/_join_us.scss */
 .join-us .content .link-group a:hover { text-decoration: none; opacity: 0.5; }
-/* line 143, ../_sass/css/page/_join_us.scss */
+/* line 144, ../_sass/css/page/_join_us.scss */
 .join-us .content .link-group a:focus, .join-us .content .link-group a:active { color: #fff; }
-/* line 148, ../_sass/css/page/_join_us.scss */
+/* line 149, ../_sass/css/page/_join_us.scss */
 .join-us .content .link-group .line { width: 1px; height: 24px; margin: 0 1rem; background-color: #fff; }
