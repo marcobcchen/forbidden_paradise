@@ -66,7 +66,7 @@
   function setSpriteSpin(){
 
     $("#intro").spritespin({
-      source: SpriteSpin.sourceArray('/images/intro/motion_{frame}.png', {
+      source: SpriteSpin.sourceArray('./images/intro/motion_{frame}.png', {
         frame: [0, 90],
         digits: 3
       }),
