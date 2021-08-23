@@ -78,8 +78,7 @@
     let id = Util.toGetParam('id');
     setPersonal(id);
 
-    TweenMax.to($('.loading .logo'), 0.6, {y: -30, autoAlpha: 0, ease: Back.easeOut, delay: 0.3});
-    TweenMax.to($('.loading'), 0.5, {autoAlpha: 0, delay: 0.7});
+    TweenMax.to($('#loading'), 0.5, {autoAlpha: 0});
 
     setSlick($('.item-group'));
   }

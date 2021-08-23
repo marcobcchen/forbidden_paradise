@@ -97,3 +97,21 @@
     right: 100px;
   }
 }
+
+// intro
+#intro{
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #000;
+  z-index: $z_loading;
+  overflow: hidden;
+
+  canvas{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}

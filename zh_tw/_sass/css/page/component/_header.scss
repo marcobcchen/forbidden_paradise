@@ -16,7 +16,7 @@ header{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
@@ -165,7 +165,7 @@ header{
               }
 
               @media (min-width: $media_xl) {
-                font-size: 24px;
+                font-size: 20px;
               }
 
               &:hover{
@@ -190,12 +190,12 @@ header{
 
           @media (min-width: $media_lg) {
             margin-top: 0;
-            margin-left: 1rem;
+            // margin-left: 1rem;
             font-size: 12px;
           }
 
           @media (min-width: $media_xl) {
-            margin-left: 2rem;
+            // margin-left: 2rem;
             font-size: 14px;
           }
 
@@ -203,19 +203,43 @@ header{
             opacity: 0.6;
           }
         }
-      }
 
-      .social-links{
-        a{
-          width: 32px;
-          margin-right: 1rem;
-          transition: .4s;
+        .social-links{
+          @media (min-width: $media_lg) {
+            margin-left: 1rem;
+          }
 
-          &:hover{
-            opacity: 0.6;
+          @media (min-width: $media_xl) {
+            margin-left: 2rem;
+          }
+
+          a{
+            width: 32px;
+            margin-right: 1rem;
+            transition: .4s;
+
+            @media (min-width: $media_lg) {
+              width: 26px;
+            }
+
+            &:hover{
+              opacity: 0.6;
+            }
           }
         }
       }
+
+      // .social-links{
+      //   a{
+      //     width: 32px;
+      //     margin-right: 1rem;
+      //     transition: .4s;
+
+      //     &:hover{
+      //       opacity: 0.6;
+      //     }
+      //   }
+      // }
     }
   }
 }

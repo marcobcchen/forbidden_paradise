@@ -30,16 +30,12 @@ img { width: 100%; }
 .modal .modal-body .youtube-container iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
 /* line 1, ../_sass/css/page/component/_loading.scss */
-.loading { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; z-index: 500; }
-/* line 10, ../_sass/css/page/component/_loading.scss */
-.loading .logo { width: 90px; }
-@media (min-width: 768px) { /* line 10, ../_sass/css/page/component/_loading.scss */
-  .loading .logo { width: 140px; } }
+#loading { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 500; background: url(../images/intro/motion_000.png) no-repeat center center; background-size: contain; background-color: #000; }
 
 /* line 2, ../_sass/css/page/component/_header.scss */
 header { position: fixed; left: 0; top: 0; width: 100%; height: 60px; padding: 0 30px; z-index: 100; }
 /* line 11, ../_sass/css/page/component/_header.scss */
-header::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+header::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 @media (min-width: 1200px) { /* line 2, ../_sass/css/page/component/_header.scss */
   header { height: 100px; padding: 0 50px; } }
 /* line 29, ../_sass/css/page/component/_header.scss */
@@ -85,7 +81,7 @@ header nav .nav-container .nav-group ul li a { font-size: 30px; font-weight: 300
 @media (min-width: 992px) { /* line 157, ../_sass/css/page/component/_header.scss */
   header nav .nav-container .nav-group ul li a { font-size: 18px; } }
 @media (min-width: 1200px) { /* line 157, ../_sass/css/page/component/_header.scss */
-  header nav .nav-container .nav-group ul li a { font-size: 24px; } }
+  header nav .nav-container .nav-group ul li a { font-size: 20px; } }
 /* line 171, ../_sass/css/page/component/_header.scss */
 header nav .nav-container .nav-group ul li a:hover { text-decoration: none; color: #fff; opacity: 0.6; }
 /* line 177, ../_sass/css/page/component/_header.scss */
@@ -93,15 +89,21 @@ header nav .nav-container .nav-group ul li a:focus, header nav .nav-container .n
 /* line 185, ../_sass/css/page/component/_header.scss */
 header nav .nav-container .nav-group .language { margin-top: 2rem; font-size: 14px; cursor: pointer; transition: .4s; }
 @media (min-width: 992px) { /* line 185, ../_sass/css/page/component/_header.scss */
-  header nav .nav-container .nav-group .language { margin-top: 0; margin-left: 1rem; font-size: 12px; } }
+  header nav .nav-container .nav-group .language { margin-top: 0; font-size: 12px; } }
 @media (min-width: 1200px) { /* line 185, ../_sass/css/page/component/_header.scss */
-  header nav .nav-container .nav-group .language { margin-left: 2rem; font-size: 14px; } }
+  header nav .nav-container .nav-group .language { font-size: 14px; } }
 /* line 202, ../_sass/css/page/component/_header.scss */
 header nav .nav-container .nav-group .language:hover { opacity: 0.6; }
-/* line 209, ../_sass/css/page/component/_header.scss */
-header nav .nav-container .social-links a { width: 32px; margin-right: 1rem; transition: .4s; }
-/* line 214, ../_sass/css/page/component/_header.scss */
-header nav .nav-container .social-links a:hover { opacity: 0.6; }
+@media (min-width: 992px) { /* line 207, ../_sass/css/page/component/_header.scss */
+  header nav .nav-container .nav-group .social-links { margin-left: 1rem; } }
+@media (min-width: 1200px) { /* line 207, ../_sass/css/page/component/_header.scss */
+  header nav .nav-container .nav-group .social-links { margin-left: 2rem; } }
+/* line 216, ../_sass/css/page/component/_header.scss */
+header nav .nav-container .nav-group .social-links a { width: 32px; margin-right: 1rem; transition: .4s; }
+@media (min-width: 992px) { /* line 216, ../_sass/css/page/component/_header.scss */
+  header nav .nav-container .nav-group .social-links a { width: 26px; } }
+/* line 225, ../_sass/css/page/component/_header.scss */
+header nav .nav-container .nav-group .social-links a:hover { opacity: 0.6; }
 
 /* line 2, ../_sass/css/page/component/_footer.scss */
 footer { width: 100%; height: 30px; background-color: #000; padding: 0 30px; }
@@ -111,10 +113,6 @@ footer { width: 100%; height: 30px; background-color: #000; padding: 0 30px; }
 footer .copyright { width: 100%; max-width: 315px; }
 @media (min-width: 768px) { /* line 13, ../_sass/css/page/component/_footer.scss */
   footer .copyright { max-width: 315px; } }
-/* line 23, ../_sass/css/page/component/_footer.scss */
-footer .social-links a { width: 20px; margin-right: 0.8rem; transition: .4s; }
-/* line 28, ../_sass/css/page/component/_footer.scss */
-footer .social-links a:hover { opacity: 0.6; }
 
 /* line 1, ../_sass/css/page/_index.scss */
 main { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #161616; }
@@ -153,3 +151,8 @@ main .banner-container .item a:hover::before { opacity: 1; }
   .arrow-right:hover { right: 95px; } }
 @media (min-width: 992px) { /* line 78, ../_sass/css/page/_index.scss */
   .arrow-right { right: 100px; } }
+
+/* line 102, ../_sass/css/page/_index.scss */
+#intro { position: fixed !important; left: 0; top: 0; width: 100% !important; height: 100% !important; background-color: #000; z-index: 500; overflow: hidden; }
+/* line 112, ../_sass/css/page/_index.scss */
+#intro canvas { left: 50% !important; top: 50% !important; transform: translate(-50%, -50%); }

@@ -1,27 +1,38 @@
 ﻿$(function(){
+
+  let winW, winH;
   
   $.html5Loader({
     filesToLoad: 'js/resource.json',
     onBeforeLoad: function(){
-      console.log('on BeforeLoad');
+      // console.log('on BeforeLoad');
     },
     onComplete: function(){
-      console.log('on complete');
+      // console.log('on complete');
       init();
     },
     onElementLoaded: function(obj, elm){
       //console.log(elm);
     },
     onUpdate: function(percentage){
-      console.log(percentage);
+      // console.log(percentage);
     }
   });
 
   function init(){
-    TweenMax.to($('.loading .logo'), 0.6, {y: -30, autoAlpha: 0, ease: Back.easeOut, delay: 0.3});
-    TweenMax.to($('.loading'), 0.5, {autoAlpha: 0, delay: 0.7});
+
+    $(window).on('resize', onResize);
+    onResize();
+
+    TweenMax.to($('#loading'), 0.5, {autoAlpha: 0, delay: 0.3});
 
     setSlick($('.item-group'));
+    setSpriteSpin();
+  }
+
+  function onResize(){
+    winW = $(window).innerWidth();
+    winH = $(window).innerHeight();
   }
 
   // 設置slick
@@ -49,6 +60,34 @@
           }
         },
       ]
+    });
+  }
+
+  function setSpriteSpin(){
+
+    $("#intro").spritespin({
+      source: SpriteSpin.sourceArray('/images/intro/motion_{frame}.png', {
+        frame: [0, 90],
+        digits: 3
+      }),
+      width: winW,
+      height: winH,
+      sense: -1,
+      // responsive: true,
+      loop: false,
+      stopFrame: 90,
+      sizeMode: 'fit',
+      onComplete: function(){
+        // console.log('done');
+      },
+      onProgress: function(){
+        // console.log('on progress');
+      },
+      onFrame: function(e, data){
+        if(data.frame > 70){
+          TweenMax.to($('#intro'), 0.6, {autoAlpha: 0});
+        }
+      }
     });
   }
 
